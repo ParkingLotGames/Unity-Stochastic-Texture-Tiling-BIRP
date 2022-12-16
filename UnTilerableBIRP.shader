@@ -22,7 +22,6 @@ Shader "UnTilerable BIRP"
             #pragma fragment frag
             #pragma target 3.0
             #pragma glsl
-            #pragma optimize 3
 
             #include "UnityCG.cginc"
 
@@ -38,7 +37,6 @@ Shader "UnTilerable BIRP"
             {
                 float4 vertex : SV_POSITION;
                 float2 uv : TEXCOORD0;
-                float2 uv2 : TEXCOORD1;
             };
 
             float4 _MainTex_ST;
